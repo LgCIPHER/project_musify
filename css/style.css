@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    font-size: 50px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    padding-left: 50px;
+    color: #1ed760;
+}
+
+main {
+    display: flex;
+}
+
+/*Code for section 1*/
+.section_1{
+    width: 100%;
+    /* this will disable the section 1 scroll bar */
+    /* height: 100vh; */
+}
+
+.audios_list{
+    height: 100%;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.audio{
+    height: auto;
+    min-height: 370px;
+    width: 23%;
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.audio_img{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.audio_img > img {
+    width: 100%;
+}
+
+.audio_detail{
+    padding: 20px;
+    /* background-color: aquamarine; */
+}
+
+.audio_title{
+    font-family: Segoe UI;
+    color: white;
+}
+
+.play_button{
+    padding: 10px 50px;
+    margin-top: 20px;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.play_button:hover{
+    background-color: #037b08;
+    border: 2px solid #037b08;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*Code for section 2*/
+.section_2{
+    width: 30%;
+    background-color: #191414;
+    /* display: flex;
+    flex-direction: column; */
+    /* row-gap: 30px; */
+    display: none;
+}
+
+.close_button {
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    top: 20px;
+    right: -90%;
+    padding: 6px 8px;
+    transform: translate(0%, -50%);
+    border-radius: 5px;
+}
+
+.media_player {
+    padding: 50px;
+}
+
+.thumbnail{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.thumbnail > img {
+    width: 100%;
+}
+
+.audio_player{
+    width: 100%;
+}
+
+.audio_player_title{
+    color: white;
+    font-family: Segoe UI;
+    font-size: 40px;
+}
+
+
+audio::-webkit-media-controls-panel{
+    background-color: cyan;
+}
+
+/* Code for footer */
+footer p{
+    color: white;
+    text-align: center;
+}
